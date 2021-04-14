@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <form action="#">
+  <p><i>Пожалуйста, заполните форму для заказа суши. Обязательные поля помечены </i><em>*</em></p>
+  <fieldset>
+    <legend>Контактная информация</legend>
+      <label for="name">Имя <em>*</em></label>
+      <input type="text" id="name" name="userName"><br>
+      <label for="phone">Телефон<em>*</em></label>
+      <input type="text" id="phone" name="userPhone"><br>
+      <label for="email">Email <em>*</em></label>
+      <input type="text" id="email" name="userEmail"><br>
+  </fieldset>
+  <fieldset>
+    <legend>Куда доставить?</legend>
+      <label for="city">Город<em>*</em></label>
+      <select id="nameOfPizza" name="nameOfPizza">
+        <option>Краматорск</option>
+        <option>Славянск</option>
+        <option>Дружковка</option>
+        <option>Бахмут</option>
+      </select>
+      <br>
+      <label for="addres">Адрес<em>*</em></label>
+      <input type="text" id="addres" name="addres"><br>
+      <label for="home">Дом<em>*</em></label>
+      <input type="text" id="home" name="home"><br>
+      <label for="appartment">Квартира</label>
+      <input type="text" id="appartment" name="appartment"><br>
+  </fieldset>
+
+  <fieldset>
+    <legend>Выберите роллы:<em>*</em> </legend>
+    <label for="bonito"><input id="bonito" type="checkbox"> Бонито</label>
+    <label for="greek"><input id="greek" type="checkbox"> Греческий</label>
+    <label for="dragon"><input id="dragon" type="checkbox"> Дракон</label>
+    <label for="hot-dog"><input id="hot-dog" type="checkbox"> Хот-дог</label>
+    <label for="cheder"><input id="cheder" type="checkbox"> Чеддер</label>
+    <label for="naruto"><input id="naruto" type="checkbox"> Наруто</label>
+    <label for="spisy"><input id="spisy" type="checkbox"> Спайси</label>
+    <label for="jamaika"><input id="jamaika" type="checkbox"> Ямайка</label>
+  </fieldset>
+
+  <fieldset>
+    <legend>Детали заказа</legend>
+    <label>
+      <span>Количество палочек:</span>
+      <input type="number" name="userRating" id="rating" min="0" max="15" step="1">
+    </label>
+    <ul>
+      <li>
+        <p>Вид палочек</p>
+        <input type="radio" name="sticks" value="ordinary" id="sticks1">
+        <label for="sticks1">Обычные</label>
+        <input type="radio" name="sticks" value="educat" id="sticks2">
+        <label for="sticks2">Учебные</label>
+      </li>
+      <li>
+        <p>Нужно ли класть салфетки?</p>
+        <input type="radio" name="nupkins" value="yes" id="yes">
+        <label for="yes">Да</label>
+        <input type="radio" name="nupkins" value="no" id="no">
+        <label for="no">Нет</label>
+      </li>
+    </ul>
+    <label for="comments">Коментарий к заказу</label>
+    <textarea id="comments"></textarea>
+  </fieldset>
+  <p><input type="submit" value="Отправить информацию"></p>
+</form>
+</body>
+</html>
